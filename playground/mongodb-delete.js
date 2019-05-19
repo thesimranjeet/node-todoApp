@@ -17,16 +17,16 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', {
 
     //deleteMany
 
-    // db.collection('Users').deleteMany({ name: 'Andrew' }).then((result) => {
-    //     console.log(result);
-    // });
+    db.collection('Users').deleteMany({ name: 'Andrew' }).then((result) => {
+        console.log(result);
+    });
 
 
     //findOneAndDelete
 
-    db.collection('Todos').findOneAndDelete({ text: 'Eat Lunch' }).then((result) => {
-        console.log(result);
-    });
+    // db.collection('Todos').findOneAndDelete({ text: 'Eat Lunch' }).then((result) => {
+    //     console.log(result);
+    // });
 
     client.close();
 
